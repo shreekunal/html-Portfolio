@@ -26,8 +26,8 @@ h1 {
     color: blueviolet;
     background-color: aliceblue;
     margin-top: 0px;
-    height: 60px;
-    font-size: 40px;
+    height: 95px;
+    font-size: 70px;
     padding-top: 10px;
     border-radius: 15px;
     /* min-width: 425px; */
@@ -36,31 +36,32 @@ h1 {
 
 .about {
     border: 0.1px gray solid;
-    object-fit: cover;
-    max-height: 65vh;
+    /* object-fit: cover; */
+    /* max-height: 65vh; */
     margin-top: 25px;
-    border-radius: 16px;
+    border-radius: 20px;
     flex-shrink: 1;
 }
 
 .grey {
     color: grey;
-    font-size: smaller;
+    font-size: large;
     margin-top: 3px;
+    margin-bottom: 40px;
 }
 
 .contact {
     background-color: aliceblue;
-    border-radius: 15px;
+    border-radius: 19px;
     /* max-width: 350px; */
     /* height: 30px; */
-    font-size: 25px;
+    font-size: 45px;
     font-weight: bolder;
     font-family: 'Courier New';
     margin-top: 25px;
-    padding: 150px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 190px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* display: flex; */
     /* flex: 1; */
 }
@@ -82,26 +83,27 @@ h2 {
     border-radius: 15px;
     min-width: 450px;
     /* max-width: 500px; */
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bolder;
     font-family: 'Courier New';
     color: aliceblue;
 }
 
 .text {
-    font-size: x-large;
-    font-weight: 900;
+    font-size: xx-large;
+    font-weight: 1000;
 }
 
 .one>img {
     background-color: white;
-    height: 500px;
+    height: 1000px;
     object-fit: cover;
     border-radius: 7px;
 }
+
 .two>img {
     background-color: white;
-    height: 450px;
+    height: 1000px;
     object-fit: cover;
     border-radius: 7px;
 }
@@ -110,14 +112,36 @@ h2 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
-@media (max-width: 525px){
-    h1{
-        font-size: 2rem;
-        height: 2.5rem;
-        padding: 0px;
+
+@media (max-width: 1000px) {
+
+    .main {
+        flex-direction: column;
     }
-    .about{
-        margin-top: 5px;
-/*         width: 400px; */
+
+    .about {
+        height: 1000px;
+        width: 95%;
     }
+
+    .contact {
+        padding: 10px;
+        font-size: xxx-large;
+        padding-left: 300px;
+        padding-right: 300px;
+
+    }
+    .grey{
+        margin-bottom: 55px;
+    }
+    h2{
+        font-size: xxx-large;
+    }
+    .one>img {
+        height: 1500px; 
+    }
+    
+    .two>img {
+        height: 1400px; 
+    }   
 }
